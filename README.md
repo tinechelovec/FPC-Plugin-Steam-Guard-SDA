@@ -16,7 +16,9 @@
 2. Зайти в TG бота Cardinal
 3. Во вкладке "Плагины" загрузить данный плагин
 4. Дальше через команду ```/addsda``` добавить shared_secret, команду дял получнеия и опредлеиться с лимитами   
- 
-По всем багам, вопросам и предложеням пишите в [Issues](https://github.com/tinechelovec/FPC-Plugin-Steam-Guard-SDA/issues) или в [Telegram](https://t.me/tinechelovec)
 
-Другие боты и плагины [Channel](https://t.me/by_thc)
+Ссылки если нужна помощь и тд:  
+[Telegram Chat](https://t.me/dev_thc_chat)  
+[Telegram Channel](https://t.me/by_thc)  
+[Telegram](https://t.me/tinechelovec) (100 звезд за сообщение или срочно важный вопрос напишите в чате и я уберу плату за сообщение)  
+[Issues](https://github.com/tinechelovec/FPC-Plugin-Steam-Guard-SDA/issues)  

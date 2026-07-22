@@ -3,7 +3,7 @@ import os, re, html, shutil, logging, hashlib
 from urllib.request import Request, urlopen
 
 NAME = 'SDA-Temp-Updater'
-VERSION = '1.0.0'
+VERSION = '1.1.0'
 DESCRIPTION = 'Временный мини-плагин для обновления Steam Guard (SDA) командой /update_sda.'
 CREDITS = '@tinechelovec'
 UUID = '4ff3f19c-7ec2-4664-900b-a1f5df4f7ec3'
@@ -12,7 +12,7 @@ SETTINGS_PAGE = False
 TARGET_NAME = 'Steam Guard (SDA)'
 TARGET_UUID = 'b886288e-7908-4f62-bd48-48e1a5c7a8e5'
 TARGET_UUID_B64 = 'Yjg4NjI4OGUtNzkwOC00ZjYyLWJkNDgtNDhlMWE1YzdhOGU1'
-UPDATE_URL = os.getenv('SDA_PLUGIN_UPDATE_URL', 'https://raw.githubusercontent.com/tinechelovec/FPC-Plugin-Telegram-Stars/main/Steam-Guard-SDA/Steam-Guard-SDA.py').strip()
+UPDATE_URL = os.getenv('SDA_PLUGIN_UPDATE_URL', 'https://raw.githubusercontent.com/tinechelovec/FPC-Plugin-Steam-Guard-SDA/main/SDA-Plugin.py').strip()
 
 log = logging.getLogger(NAME)
 

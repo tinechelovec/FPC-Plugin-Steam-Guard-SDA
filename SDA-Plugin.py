@@ -20,7 +20,7 @@ from FunPayAPI.updater.events import NewMessageEvent
 if TYPE_CHECKING:
     from cardinal import Cardinal
 NAME = 'Steam Guard (SDA)'
-VERSION = '1.3'
+VERSION = '1.4'
 DESCRIPTION = 'Получение Steam Guard (SDA) кода по команде.'
 CREDITS = '@tinechelovec'
 UUID = 'b886288e-7908-4f62-bd48-48e1a5c7a8e5'
@@ -31,8 +31,8 @@ INSTRUCTION_URL = f'https://teletype.in/@tinechelovec/Steam-Guard-SDA'
 CREATOR_URL = 'https://t.me/tinechelovec'
 GROUP_URL = 'https://t.me/dev_thc_chat'
 CHANNEL_URL = 'https://t.me/by_thc'
-SDA_GITHUB_URL = os.getenv('SDA_PLUGIN_GITHUB_URL', 'https://github.com/tinechelovec/FPC-Plugin-Telegram-Stars').strip()
-SDA_UPDATE_URL = os.getenv('SDA_PLUGIN_UPDATE_URL', 'https://raw.githubusercontent.com/tinechelovec/FPC-Plugin-Telegram-Stars/main/Steam-Guard-SDA/Steam-Guard-SDA.py').strip()
+SDA_GITHUB_URL = os.getenv('SDA_PLUGIN_GITHUB_URL', 'https://github.com/tinechelovec/FPC-Plugin-Steam-Guard-SDA').strip()
+SDA_UPDATE_URL = os.getenv('SDA_PLUGIN_UPDATE_URL', 'https://raw.githubusercontent.com/tinechelovec/FPC-Plugin-Steam-Guard-SDA/main/SDA-Plugin.py').strip()
 PLUGIN_FOLDER = 'storage/plugins/steam_guard_sda'
 DATA_FILE = os.path.join(PLUGIN_FOLDER, 'data.json')
 USAGE_FILE = os.path.join(PLUGIN_FOLDER, 'usage.json')

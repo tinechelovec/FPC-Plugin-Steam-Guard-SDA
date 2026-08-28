@@ -20,14 +20,15 @@ from FunPayAPI.updater.events import NewMessageEvent
 if TYPE_CHECKING:
     from cardinal import Cardinal
 NAME = 'Steam Guard (SDA)'
-VERSION = '1.4'
+VERSION = '1.4.1'
 DESCRIPTION = 'Получение Steam Guard (SDA) кода по команде.'
 CREDITS = '@tinechelovec'
 UUID = 'b886288e-7908-4f62-bd48-48e1a5c7a8e5'
 SETTINGS_PAGE = True
 logger = logging.getLogger('SteamGuardSDA')
 PREFIX = '[SteamGuardSDA]'
-INSTRUCTION_URL = f'https://teletype.in/@tinechelovec/Steam-Guard-SDA'
+INSTRUCTION_URL = f'https://teletype.media/@tinechelovec/Steam-Guard-SDA'
+ALT_INSTRUCTION_URL = 'https://github.com/tinechelovec/FPC-Plugin-Steam-Guard-SDA/blob/main/instructions.md'
 CREATOR_URL = 'https://t.me/tinechelovec'
 GROUP_URL = 'https://t.me/dev_thc_chat'
 CHANNEL_URL = 'https://t.me/by_thc'
@@ -771,6 +772,7 @@ def _info_kb() -> InlineKeyboardMarkup:
     kb = InlineKeyboardMarkup()
     kb.row(InlineKeyboardButton('💬 Чат', url=GROUP_URL), InlineKeyboardButton('📢 Канал', url=CHANNEL_URL))
     kb.row(InlineKeyboardButton('📖 Инструкция', url=INSTRUCTION_URL))
+    kb.row(InlineKeyboardButton('📚 Альтернативная инструкция', url=ALT_INSTRUCTION_URL))
     kb.row(InlineKeyboardButton('👤 Мой Telegram', url=CREATOR_URL))
     kb.row(InlineKeyboardButton('◀️ Назад', callback_data=CB_WELCOME))
     return kb
@@ -853,6 +855,7 @@ def _first_settings_notice_text() -> str:
 def _first_settings_notice_kb() -> InlineKeyboardMarkup:
     kb = InlineKeyboardMarkup()
     kb.row(InlineKeyboardButton('📖 Открыть инструкцию', url=INSTRUCTION_URL))
+    kb.row(InlineKeyboardButton('📚 Альтернативная инструкция', url=ALT_INSTRUCTION_URL))
     kb.row(InlineKeyboardButton('✅ Я прочитал инструкцию', callback_data=CB_INSTRUCTION_ACK))
     kb.row(InlineKeyboardButton('◀️ Назад', callback_data=CB_WELCOME))
     return kb
